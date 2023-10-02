@@ -29,6 +29,7 @@ namespace CustomerApp.Models
         public string? Country_name { get; set; } = string.Empty;
         public string? Primary_language_code { get; set; } = string.Empty;
         public string? Primary_language { get; set; } = string.Empty;
+        [RegularExpression("^\\d+(\\.\\d{1,2})?$", ErrorMessage = "Invalid Format")]
         public float? Balance { get; set; } = 0;
         [Display(Name ="Phone Number")]
         public string? Phone_Number { get; set; } = string.Empty;
